@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HomeworkTemplate {
+public class HomeworkTemplate_3 {
     public static void main(String[] args) {
 
         int correctCount = 0, wrongCount = 0;
@@ -20,11 +20,13 @@ public class HomeworkTemplate {
             System.out.print("\nВаш ответ: ");
             String userAnswer = scanner.next();
 
+
             if (correctAnswers[i].equalsIgnoreCase(userAnswer)) {
+                System.out.println("Ответ правильный");
                 correctCount++;
             } else {
                 wrongCount++;
-
+                System.out.println("Неправильно, ответ: " + correctAnswers[i]);
             }
         }
 
